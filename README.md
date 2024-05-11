@@ -13,7 +13,7 @@ dependencies:
       url: https://github.com/C4co/lng.git
 ```
 
-## 01: Initial Configuration
+## 01: Initial configuration
 
 ```dart
 import 'package:lng/lng.dart';
@@ -87,7 +87,7 @@ class _HomeState extends State<Home> with LngMixin {
 }
 ```
 
-## 03: Usign openLng
+## 03: Call openLng()
 
 `openLng` is a function that open a dialog to select the language.
 
