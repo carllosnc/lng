@@ -12,7 +12,7 @@
 
 ## Install
 
-This is a unpublished package, so you will need to add it to your pubspec.yaml file.
+This is a unpublished package it means that the package is not yet published on pub.dev.
 
 ```yaml
 dependencies:
