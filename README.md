@@ -1,4 +1,4 @@
-# LNG
+# lng
 
 >A Flutter package to manage language translations.
 
