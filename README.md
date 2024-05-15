@@ -2,7 +2,9 @@
 
 >A Flutter package to manage language translations.
 
-<img src="lng.gif" width="300" />
+| Example  | 
+| -------- |
+| <img src="lng.gif" width="280" /> | 
 
 ## Install
 
