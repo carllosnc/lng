@@ -2,6 +2,8 @@
 
 >A Flutter package to manage language translations.
 
+<img src="lng.gif" width="300" />
+
 ## Install
 
 This is a unpublished package, so you will need to add it to your pubspec.yaml file.
