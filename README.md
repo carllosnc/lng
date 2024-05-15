@@ -2,9 +2,9 @@
 
 >A Flutter package to manage language translations.
 
-| Example  | 
-| -------- |
-| <img src="lng.gif" width="280" /> | 
+| Example                           |
+| --------------------------------- |
+| <img src="lng.gif" width="280" /> |
 
 ## Install
 
@@ -29,11 +29,15 @@ void main() {
       'es': 'Spanish',
       'en': 'English',
       'text': 'Hello World',
+      'color': Colors.red,
+      'app_title': 'App title'
     },
     'es': {
       'es': 'Español',
       'en': 'Inglés',
       'text': 'Hola Mundo',
+      'color': Colors.orange
+      'app_title': 'Título de la app'
     },
   });
 }
@@ -64,17 +68,6 @@ class _HomeState extends State<Home> with LngMixin {
       backgroundColor: lng.get('color'),
       appBar: AppBar(
         title: Text(lng.get('app_title')),
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.translate),
-            onPressed: () {
-              openLng(
-                context: context,
-                title: "Set language",
-              );
-            },
-          ),
-        ],
       ),
       body: SizedBox(
         width: double.infinity,
