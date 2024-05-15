@@ -17,7 +17,14 @@ dependencies:
       url: https://github.com/C4co/lng.git
 ```
 
+To more information about unpublished packages see: https://dart.dev/tools/pub/package-layout#unpublished-packages
+
 ## 01: Initial configuration
+
+The first step is to initialize the package.
+
+- `lngCore`: is responsible for the initialization of the package.
+- `lng.addLabels`: is the method that add the translations.
 
 ```dart
 import 'package:lng/lng.dart';
@@ -69,15 +76,10 @@ class _HomeState extends State<Home> with LngMixin {
       appBar: AppBar(
         title: Text(lng.get('app_title')),
       ),
-      body: SizedBox(
-        width: double.infinity,
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Text(lng.get('text')),
-          ],
-        ),
+      body: Column(
+        children: [
+          Text(lng.get('text')),
+        ],
       ),
     );
   }
