@@ -1,5 +1,7 @@
 # lng
 
+![Static Badge](https://img.shields.io/badge/Flutter_package-blue)
+
 >A Flutter package to manage language translations.
 
 | Example                           |
