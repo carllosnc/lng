@@ -106,6 +106,16 @@ IconButton(
 ),
 ```
 
+**Parameters**
+
+| Parameter         | Type           | Description                                                     |
+| ----------------- | -------------- | --------------------------------------------------------------- |
+| `context`         | `BuildContext` | The context to open the modal bottom sheet in.                  |
+| `title`           | `String`       | The title of the modal bottom sheet.                            |
+| `titleStyle`      | `TextStyle?`   | The style of the title of the modal bottom sheet.               |
+| `backgroundColor` | `Color?`       | The background color of the modal bottom sheet.                 |
+| `borderRadius`    | `double`       | Top left and top right border radius of the modal bottom sheet. |
+
 ---
 
 Carlos Costa @ 2024
