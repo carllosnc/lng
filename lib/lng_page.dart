@@ -17,17 +17,24 @@ openLng({
 
   ///[backgroundColor] The background color of the modal bottom sheet.
   Color? backgroundColor,
+
+  ///[borderRadius] Top left and top right border radius of the modal bottom sheet.
+  double borderRadius = 25,
 }) {
   showModalBottomSheet(
     isScrollControlled: true,
     context: context,
-    backgroundColor: backgroundColor,
+    backgroundColor: Colors.transparent,
     builder: (context) {
       return Container(
         key: const Key('lng_container'),
         clipBehavior: Clip.hardEdge,
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(18),
+          color: Theme.of(context).colorScheme.background,
+          borderRadius: BorderRadius.only(
+            topLeft: Radius.circular(borderRadius),
+            topRight: Radius.circular(borderRadius),
+          ),
         ),
         height: MediaQuery.of(context).size.height - 100,
         child: Scaffold(
