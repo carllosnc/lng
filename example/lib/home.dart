@@ -24,6 +24,7 @@ class _HomeState extends State<Home> with LngMixin {
               openLng(
                 context: context,
                 title: lng.get('set_lang'),
+                borderRadius: 25,
               );
             },
           ),
