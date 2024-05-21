@@ -9,10 +9,7 @@ class _LngCore {
   }) async {
     prefs = await SharedPreferences.getInstance();
 
-    /// get the current language from the shared preferences
     final String? lang = prefs.getString('lang');
-
-    /// if the language is not set, set the default language
     lng.setLanguage(lang ?? defaultLang);
   }
 }

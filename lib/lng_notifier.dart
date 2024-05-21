@@ -11,11 +11,7 @@ class _LngNotifier extends ChangeNotifier {
     final SharedPreferences prefs = await SharedPreferences.getInstance();
 
     currentLanguage = language.toString();
-
-    /// set the current language to the shared preferences
     prefs.setString('lang', language.toString());
-
-    /// notify the listeners
     notifyListeners();
   }
 
