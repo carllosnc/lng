@@ -51,6 +51,11 @@ void main() {
       'app_title': 'Título de la app'
     },
   });
+
+  //event listener for language change
+  lng.onLangChange = (String language) {
+    log('Language changed to $language');
+  };
 }
 ```
 
@@ -115,6 +120,20 @@ IconButton(
 | `titleStyle`      | `TextStyle?`   | The style of the title of the modal bottom sheet.               |
 | `backgroundColor` | `Color?`       | The background color of the modal bottom sheet.                 |
 | `borderRadius`    | `double`       | Top left and top right border radius of the modal bottom sheet. |
+
+## onLangChange
+
+`onLangChange` is a function that is called when the language changes.
+
+| Parameter  | Type     | Description                            |
+| ---------- | -------- | -------------------------------------- |
+| `language` | `String` | The language code that was changed to. |
+
+```dart
+lng.onLangChange = (String language) {
+  log('Language changed to $language');
+};
+```
 
 ---
 

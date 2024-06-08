@@ -4,6 +4,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 class _LngNotifier extends ChangeNotifier {
   String currentLanguage = 'en';
   Map<String, Map<String, dynamic>> labels = {};
+  Function(String)? onLangChange;
 
   /// set the current language
   /// [language] is the language code
@@ -12,6 +13,7 @@ class _LngNotifier extends ChangeNotifier {
 
     currentLanguage = language.toString();
     prefs.setString('lang', language.toString());
+    onLangChange?.call(language);
     notifyListeners();
   }
 
