@@ -123,7 +123,7 @@ IconButton(
 
 ## onLangChange
 
-`onLangChange` is a function that is called when the language changes.
+`lng.onLangChange` is a function that is called when the language changes.
 
 | Parameter  | Type     | Description                            |
 | ---------- | -------- | -------------------------------------- |
