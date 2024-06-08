@@ -121,7 +121,7 @@ IconButton(
 | `backgroundColor` | `Color?`       | The background color of the modal bottom sheet.                 |
 | `borderRadius`    | `double`       | Top left and top right border radius of the modal bottom sheet. |
 
-## onLangChange
+## lng.onLangChange
 
 `lng.onLangChange` is a function that is called when the language changes.
 
