@@ -1,7 +1,7 @@
 # lng
 
 ![Static Badge](https://img.shields.io/badge/Flutter_package-blue)
-[![lng](https://github.com/C4co/lng/actions/workflows/dart.yml/badge.svg)](https://github.com/C4co/lng/actions/workflows/dart.yml)
+[![lng](https://github.com/carllosnc/lng/actions/workflows/dart.yml/badge.svg)](https://github.com/carllosnc/lng/actions/workflows/dart.yml)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/03180b89a3b44c4893f03a40426b9175)](https://app.codacy.com/gh/C4co/lng/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 
 >A Flutter package to manage language translations.
@@ -18,7 +18,7 @@ This is a unpublished package it means that the package is not yet published on 
 dependencies:
   vw:
     git:
-      url: https://github.com/C4co/lng.git
+      url: https://github.com/carllosnc/lng.git
 ```
 
 To more information about unpublished packages see: https://dart.dev/tools/pub/package-layout#unpublished-packages
