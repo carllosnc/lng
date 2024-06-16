@@ -2,7 +2,7 @@
 
 ![Static Badge](https://img.shields.io/badge/Flutter_package-blue)
 [![lng](https://github.com/carllosnc/lng/actions/workflows/dart.yml/badge.svg)](https://github.com/carllosnc/lng/actions/workflows/dart.yml)
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/03180b89a3b44c4893f03a40426b9175)](https://app.codacy.com/gh/C4co/lng/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/71b2c117ca0349a6b3dc8f9ec87f48f2)](https://app.codacy.com/gh/carllosnc/lng/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 
 >A Flutter package to manage language translations.
 
