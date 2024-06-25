@@ -27,14 +27,14 @@ To more information about unpublished packages see: https://dart.dev/tools/pub/p
 
 The first step is to initialize the package.
 
-- `lngCore`: is responsible for the initialization of the package.
+- `lng.init`: is responsible for the initialization of the package.
 - `lng.addLabels`: is the method that add the translations.
 
 ```dart
 import 'package:lng/lng.dart';
 
 void main() {
-  lngCore.init(defaultLang: 'en');
+  lng.init(defaultLang: 'en');
   lng.addLabels({
     'en': {
       'es': 'Spanish',
