@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import './lng_notifier.dart';
+import 'lng_state.dart';
 
 /// Opens a modal bottom sheet to select a language.
 /// The modal bottom sheet is closed when the user selects a language.
