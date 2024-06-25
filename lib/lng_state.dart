@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-class _LngNotifier extends ChangeNotifier {
+class _LngState extends ChangeNotifier {
   String currentLanguage = 'en';
   Map<String, Map<String, dynamic>> labels = {};
   Function(String)? onLangChange;
@@ -47,4 +47,4 @@ class _LngNotifier extends ChangeNotifier {
   }
 }
 
-final lng = _LngNotifier();
+final lng = _LngState();
