@@ -52,16 +52,22 @@ class _HomeState extends State<Home> with LngMixin {
             const SizedBox(
               height: 20,
             ),
-            SizedBox(
-              width: double.infinity,
-              child: Text(
-                lng.get('title'),
-                textAlign: TextAlign.start,
-                style: const TextStyle(
-                  fontSize: 40,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
-                ),
+            Text(
+              lng.get('title'),
+              textAlign: TextAlign.start,
+              style: const TextStyle(
+                fontSize: 40,
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
+              ),
+            ),
+            Text(
+              lng.get('hello_world'),
+              textAlign: TextAlign.start,
+              style: const TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
               ),
             ),
             const SizedBox(
