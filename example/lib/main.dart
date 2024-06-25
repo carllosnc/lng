@@ -8,7 +8,7 @@ import './labels.dart';
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
 
-  lngCore.init(defaultLang: 'en');
+  lng.init(defaultLang: 'en');
   lng.addLabels(labels);
   lng.onLangChange = (String language) {
     log('Language changed to $language');
