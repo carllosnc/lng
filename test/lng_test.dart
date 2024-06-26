@@ -9,8 +9,11 @@ void main() {
     });
 
     test("Check lng.init", () {
-      lng.init(defaultLang: 'en');
-      expect(lng.currentLanguage, 'en');
+      lng.init(defaultLang: 'pt-BR');
+
+      lng.onLangChange = (String language) {
+        expect(language, 'pt-BR');
+      };
     });
 
     test("Check lng.addLabels", () {
@@ -25,21 +28,45 @@ void main() {
           'en': 'Inglés',
           'text': 'Hola Mundo',
         },
+        'pt-BR': {
+          'es': 'Espanhol',
+          'en': 'Inglês',
+          'text': 'Olá Mundo',
+        },
       });
 
-      expect(lng.get('es'), 'Spanish');
-      expect(lng.get('en'), 'English');
-      expect(lng.get('text'), 'Hello World');
+      expect(lng.get('es'), 'Espanhol');
+      expect(lng.get('en'), 'Inglês');
+      expect(lng.get('text'), 'Olá Mundo');
     });
 
     test("Check lng.setLanguage", () {
       lng.setLanguage('es');
       lng.onLangChange = (String language) {
         expect(language, 'es');
-
         expect(lng.get('es'), 'Español');
         expect(lng.get('en'), 'Inglés');
         expect(lng.get('text'), 'Hola Mundo');
+      };
+    });
+
+    test("Check lng.setLanguage", () {
+      lng.setLanguage('pt-BR');
+      lng.onLangChange = (String language) {
+        expect(language, 'pt-BR');
+        expect(lng.get('es'), 'Espanhol');
+        expect(lng.get('en'), 'Inglês');
+        expect(lng.get('text'), 'Olá Mundo');
+      };
+    });
+
+    test("Check lng.setLanguage", () {
+      lng.setLanguage('en');
+      lng.onLangChange = (String language) {
+        expect(language, 'en');
+        expect(lng.get('es'), 'Spanish');
+        expect(lng.get('en'), 'English');
+        expect(lng.get('text'), 'Hello World');
       };
     });
   });
